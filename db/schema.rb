@@ -19,8 +19,10 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_02_182037) do
     t.string "description"
     t.string "recipe"
     t.bigint "country_id", null: false
+    t.bigint "country_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_breads_on_country_id"
     t.index ["country_id"], name: "index_breads_on_country_id"
   end
 
@@ -32,12 +34,12 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_02_182037) do
   end
 
   create_table "user_breads", force: :cascade do |t|
-    t.bigint "users_id", null: false
-    t.bigint "breads_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "bread_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["breads_id"], name: "index_user_breads_on_breads_id"
-    t.index ["users_id"], name: "index_user_breads_on_users_id"
+    t.index ["bread_id"], name: "index_user_breads_on_bread_id"
+    t.index ["user_id"], name: "index_user_breads_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

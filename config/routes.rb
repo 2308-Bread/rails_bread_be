@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  #World Map
-  resources :welcome, only: :index
-
+  namespace :api do
+    namespace :v1 do
+      resources :welcome, only: :index
+    end
+  end
 end

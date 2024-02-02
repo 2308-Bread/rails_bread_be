@@ -7,7 +7,8 @@ class Api::V1::CountriesController < ApplicationController
   end
   # GET /api/v1/countries/:id
   def show  
-    render json: CountrySerializer.new(Country.find(params[:id])), status: 200
+    country = Country.find(params[:id])
+    render json: { country: CountrySerializer.new(country), breads: BreadSerializer.new(country.breads) }, status:200
   end
 
   private

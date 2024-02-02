@@ -11,7 +11,6 @@ RSpec.describe "Countries Index" do
 
 
     get api_v1_countries_path
-
     response_body = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful

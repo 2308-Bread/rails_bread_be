@@ -4,7 +4,7 @@ RSpec.describe "Countries Show" do
   it "Will retrun only one country" do
     c1 = Country.create!(name: "Scotland", description: "Scotland, with its rich culinary heritage, has a diverse and flavorful food tradition that reflects its history and geographical influences. When it comes to bread and food in general, Scotland offers a range of unique and traditional dishes.")
 
-    get api_v1_country_path(c1)
+    get api_v1_country_path(c1.name)
     response_body = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
@@ -32,7 +32,7 @@ RSpec.describe "Countries Show" do
     c1.breads << Bread.create!(name: "Cranachan Swirl Bread", description: "Inspired by the Scottish dessert Cranachan, this swirl bread is filled with raspberries, honey, and toasted oats. A sweet and fruity treat to brighten your day.", recipe: "Ingredients: 500g strong white flour 10g salt 7g active dry yeast 300ml warm milk 50g honey Filling: Raspberries, honey, toasted oats Instructions: Mix flour and salt. Dissolve yeast in warm milk with honey. Knead the dough, let it rise for 1-2 hours. Roll out the dough, spread with honey, raspberries, and oats. Roll into a swirl, rise for 30 minutes, and bake at 375°F (190°C) for 25-30 minutes.", country_id: c1.id)
     c1.breads << Bread.create!(name: "Whisky Barrel Stave Bread", description: "Infused with the smoky essence of whisky barrel staves, this unique bread brings a hint of Scotland's whisky-making tradition to the table. A savory and aromatic delight.", recipe: "Ingredients: 500g bread flour 10g salt 7g active dry yeast 300ml water Soaked whisky barrel staves (finely chopped) Instructions: Mix flour and salt. Dissolve yeast in warm water. Add chopped whisky barrel staves to the dough, knead, and let it rise for 2 hours. Shape the dough, rise for 30 minutes, and bake at 400°F (200°C) for 30-35 minutes.", country_id: c1.id)
 
-    get api_v1_country_path(c1)
+    get api_v1_country_path(c1.name)
     response_body = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
@@ -62,14 +62,14 @@ RSpec.describe "Countries Show" do
 
   describe '#sad-pathing' do
     it 'returns error if not a country' do
-      get api_v1_country_path(1)
+      get api_v1_country_path("hjfdkdashjlf")
       response_body = JSON.parse(response.body, symbolize_names: true)
       expect(response).to_not be_successful
       expect(response.status).to eq(404)
-
+      
       expect(response_body).to be_a(Hash)
-      expect(response_body[:error_object][:message]).to eq("Couldn't find Country with 'id'=1")
-      expect(response_body[:error_object][:status]).to eq(404)
+      expect(response_body[:error]).to eq("Cannot find country with name hjfdkdashjlf")
+      expect(response_body[:status]).to eq(404)
     end
   end
 end

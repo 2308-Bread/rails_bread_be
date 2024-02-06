@@ -11,7 +11,7 @@ RSpec.describe "Breads API endpoints" do
         recipe: "Mix sour and bread stuff and then bake it"
         )
 
-      get "/api/v1/breads/#{bread.id}"
+      get "/api/v1/breads/#{bread.name}"
       
       expect(response).to be_successful
       expect(response.status).to eq(200)
@@ -25,7 +25,7 @@ RSpec.describe "Breads API endpoints" do
       expect(single_bread[:country_id]).to eq(single_bread.country.id)
       
       bread_response = JSON.parse(response.body, symbolize_names: true)
- 
+      # require 'pry'; binding.pry
       expect(bread_response).to be_a(Hash)
       expect(bread_response[:data]).to be_a(Hash)
       expect(bread_response[:data][:id]).to eq("#{bread.id}")

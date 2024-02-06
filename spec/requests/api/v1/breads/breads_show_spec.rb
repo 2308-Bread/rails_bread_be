@@ -25,7 +25,7 @@ RSpec.describe "Breads API endpoints" do
       expect(single_bread[:country_id]).to eq(single_bread.country.id)
       
       bread_response = JSON.parse(response.body, symbolize_names: true)
-      # require 'pry'; binding.pry
+
       expect(bread_response).to be_a(Hash)
       expect(bread_response[:data]).to be_a(Hash)
       expect(bread_response[:data][:id]).to eq("#{bread.id}")

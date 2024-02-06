@@ -61,14 +61,14 @@ In your terminal:
   - **All Countries**
     - GET `/api/v1/countries`
 
-  - **Specific Country**
+  - **SingleCountry with their associated breads** (Pass the endpoint a country name)
     - GET `/api/v1/countries/:country_name`
 
 **Breads**
   - **All Breads**
     - GET `/api/v1/breads`
 
-  - **Specific Bread Details**
+  - **Specific Bread Details** (pass the endpoint a bread name)
     - GET `/api/v1/breads/:bread_id`
 
 

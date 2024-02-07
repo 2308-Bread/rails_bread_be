@@ -3,14 +3,14 @@ class Api::V1::UserBreadsController < ApplicationController
   def index
 
   end
-
+# POST /api/v1/user_breads
   def create
     user = User.find(params[:user_id])
     bread = Bread.find(params[:bread_id])
     user_bread = UserBread.create({ user_id: user.id, bread_id: bread.id })
     render json: UserBreadSerializer.new(user_bread).serialized_response, status: 201
   end
-
+# DELETE /api/v1/user_breads/:user_bread_id
   def destroy
     user = User.find(params[:user_id])
     bread = Bread.find(params[:bread_id])

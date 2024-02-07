@@ -4,7 +4,6 @@ class Api::V1::UserBreadsController < ApplicationController
   
 # POST /api/v1/user_breads
   def create
-    require 'pry'; binding.pry
     user_bread = UserBread.create({ user_id: @user.id, bread_id: @bread.id })
     render json: UserBreadSerializer.new(user_bread).serialized_response, status: 201
   end
@@ -21,12 +20,10 @@ class Api::V1::UserBreadsController < ApplicationController
   end
 
   def find_user
-    require 'pry'; binding.pry
     @user = User.find(params[:user_id])
   end
 
   def find_bread
-    require 'pry'; binding.pry
     @bread = Bread.find(params[:bread_id])
   end
 end

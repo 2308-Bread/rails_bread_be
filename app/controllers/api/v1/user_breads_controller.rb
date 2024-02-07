@@ -1,9 +1,7 @@
 class Api::V1::UserBreadsController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
-  before_action :find_user, :find_bread, only: %i[ create update destroy ] 
-  def index
-
-  end
+  before_action :find_user, :find_bread, only: %i[ create destroy ] 
+  
 # POST /api/v1/user_breads
   def create
     user_bread = UserBread.create({ user_id: @user.id, bread_id: @bread.id })

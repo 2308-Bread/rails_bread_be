@@ -4,6 +4,7 @@
         "id": "9",
         "type": "bread",
         "attributes": {
+            "imageUrl": "string of photo url"
             "name": "Sakura Blossom Buns",
             "description": "Inspired by the beauty of cherry blossoms, these buns are filled with a delicate sakura-flavored cream. A delightful and seasonal Japanese treat.",
             "recipe": {
@@ -28,6 +29,7 @@
             "id": "2",
             "type": "country",
             "attributes": {
+                "imageUrl": "string of photo url"
                 "name": "Japan",
                 "description": {
                     "overview": "Talk about country as a whole",

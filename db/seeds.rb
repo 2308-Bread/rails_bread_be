@@ -7,7 +7,9 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-c1 = Country.create!(name: "Scotland", description: "Scotland, with its rich culinary heritage, has a diverse and flavorful food tradition that reflects its history and geographical influences. When it comes to bread and food in general, Scotland offers a range of unique and traditional dishes.")
+c1 = Country.create!(name: "Scotland", 
+                    overview: "Scotland, with its rich culinary heritage, has a diverse and flavorful food tradition that reflects its history and geographical influences. When it comes to bread and food in general, Scotland offers a range of unique and traditional dishes.",
+                    culinary: "")
 c2 =Country.create!(name: "Japan", description: "Japan, with its rich culinary heritage, is celebrated for its meticulous preparation, diverse flavors, and a harmonious blend of tradition and innovation. Japanese cuisine, or washoku, is deeply rooted in seasonal ingredients, artistic presentation, and a respect for culinary craftsmanship. Here's a glimpse into Japanese food and bread.")
 c3 =Country.create!(name: "Brazil", description: "Pão de queijo is a famous Brazilian cheese bread made with cassava flour and cheese, resulting in a chewy and cheesy delight.")
 c4 =Country.create!(name: "France", description: "France is famed for its diverse bread offerings. Baguettes, with their crispy crust and soft interior, are a staple. Pain de campagne (country bread) and pain complet (whole wheat bread) are also popular. Each region has its own specialty, contributing to the rich tapestry of French bread.")
@@ -55,4 +57,16 @@ c6.breads << Bread.create!(name: "Focaccia", description: "Focaccia is a flat It
 c6.breads << Bread.create!(name: "Grissini", description: "Grissini are thin and crunchy Italian breadsticks. They are often served as appetizers or alongside antipasti, providing a satisfying crunch with each bite.", recipe: "Ingredients: 500g bread flour 10g salt 7g active dry yeast 250ml warm water Olive oil (for brushing) Toppings: Sesame seeds, poppy seeds Instructions: Mix flour and salt. Dissolve yeast in warm water. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Roll out the dough, cut into thin strips, and bake at 400°F (200°C) for 12-15 minutes.", country_id: c6.id)
 c6.breads << Bread.create!(name: "Pane Casareccio", description: "Pane Casareccio is a rustic Italian bread with a thick crust and a chewy crumb. It embodies the traditional and simple essence of Italian baking.", recipe: "Ingredients: 500g bread flour 10g salt 7g active dry yeast 350ml warm water Instructions: Mix flour and salt. Dissolve yeast in warm water. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Shape the dough, rise for 30 minutes, and bake at 425°F (220°C) for 25-30 minutes.", country_id: c6.id)
 
-user = User.create!(name: "Bradley Baker", email: "dabakingking@baker.com", password_digest: "breaduberalles")
+
+
+# Stash of country Images 
+# Scotland: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1200px-Flag_of_Scotland.svg.png"
+# France: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png"
+# Italy: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/220px-Flag_of_Italy.svg.png"
+# Brazil: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png"
+# India: "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1280px-Flag_of_India.svg.png"
+# Japan: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png"
+
+# Stash of bread images
+#Scotland
+  # user = User.create!(name: "Bradley Baker", email: "dabakingking@baker.com", password_digest: "breaduberalles")

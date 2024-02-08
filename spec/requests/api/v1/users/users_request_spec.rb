@@ -92,4 +92,11 @@ RSpec.describe 'Users API endpoints' do
       expect(user_info[:error]).to eq("This email already has an account with us.")
     end
   end
+
+  describe "delete /api/v1/users" do 
+    it "can delete an existing user " do
+
+
+    end
+  end
 end

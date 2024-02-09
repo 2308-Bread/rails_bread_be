@@ -4,12 +4,12 @@ RSpec.describe 'UserBreads API endpoints' do
   before(:each) do
     @user = User.create!(name: "Bill", email: "bill@bill.com", password: "scienceguy1", password_confirmation: "scienceguy1")
     @country = Country.create!(name: "Italy", description: "Italian bread is diverse and regionally influenced. Ciabatta, with its irregular holes and crisp crust, is popular. Focaccia, a flatbread often topped with herbs and olive oil, hails from Genoa. Grissini, thin and crunchy breadsticks, are another Italian favorite.")
-    @bread = @country.breads.create!(
-      name: "Ciabatta",
-      description: "Ciabatta is an Italian bread known for its irregular holes, chewy texture, and crisp crust. It's a versatile bread often used for sandwiches or dipping in olive oil.",
-      recipe: "Ingredients: 500g bread flour 10g salt 7g active dry yeast 350ml warm water Instructions: Mix flour and salt. Dissolve yeast in warm water. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Shape the dough, rise for 30 minutes, and bake at 425°F (220°C) for 20-25 minutes.",
-      country_id: @country.id
-      )
+    @bread = @country.breads.create!(name: "Ciabatta",
+    description: "Ciabatta is an Italian bread known for its irregular holes, chewy texture, and crisp crust. It's a versatile bread often used for sandwiches or dipping in olive oil.",
+    ingredients: ["500g bread flour", "10g salt", "7g active dry yeast", "350ml warm water"],
+    instructions: ["Mix flour and salt.", "Dissolve yeast in warm water.", "Combine wet and dry ingredients, knead, and let it rise for 1-2 hours.", "Shape the dough, rise for 30 minutes, and bake at 425°F (220°C) for 20-25 minutes."],
+    imageUrl: "ciabatta",
+    country_id: @country.id)
   end
   describe "Post /api/v1/user_breads" do
     it "creates a new association between an existing user and bread to store in a user's bread box" do
@@ -47,14 +47,20 @@ RSpec.describe 'UserBreads API endpoints' do
       r = response[:user_bread_attributes][0][:bread_attributes]
 
       expect(r).to have_key(:description)
-      expect(r).to have_key(:recipe)
+      expect(r).to have_key(:ingredients)
+      expect(r).to have_key(:instructions)
+      expect(r).to have_key(:imageUrl)
       expect(r).to have_key(:bread_country)
       expect(r[:bread_name]).to be_a(String)
       expect(r[:bread_name]).to eq(@bread.name)
       expect(r[:description]).to be_a(String)
       expect(r[:description]).to eq(@bread.description)
-      expect(r[:recipe]).to be_a(String)
-      expect(r[:recipe]).to eq(@bread.recipe)
+      expect(r[:ingredients]).to be_a(String)
+      expect(r[:ingredients]).to eq(@bread.ingredients)
+      expect(r[:instructions]).to be_a(String)
+      expect(r[:instructions]).to eq(@bread.instructions)
+      expect(r[:imageUrl]).to be_a(String)
+      expect(r[:imageUrl]).to eq(@bread.imageUrl)
       expect(r[:bread_country]).to be_a(String)
       expect(r[:bread_country]).to eq(@bread.country.name)      
     end

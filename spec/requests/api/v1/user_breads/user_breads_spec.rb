@@ -8,7 +8,7 @@ RSpec.describe 'UserBreads API endpoints' do
     description: "Ciabatta is an Italian bread known for its irregular holes, chewy texture, and crisp crust. It's a versatile bread often used for sandwiches or dipping in olive oil.",
     ingredients: ["500g bread flour", "10g salt", "7g active dry yeast", "350ml warm water"],
     instructions: ["Mix flour and salt.", "Dissolve yeast in warm water.", "Combine wet and dry ingredients, knead, and let it rise for 1-2 hours.", "Shape the dough, rise for 30 minutes, and bake at 425°F (220°C) for 20-25 minutes."],
-    imageUrl: "ciabatta",
+    imageUrl: "https://i2.wp.com/www.thebrickkitchen.com/wp-content/uploads/2017/05/Easy-Homemade-3-Hour-Ciabatta-The-Brick-Kitchen-2.jpg",
     country_id: @country.id)
   end
   describe "Post /api/v1/user_breads" do

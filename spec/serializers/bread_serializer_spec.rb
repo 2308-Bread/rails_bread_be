@@ -7,7 +7,7 @@ RSpec.describe "Bread Serializer" do
     description: "A Scottish classic, this oat bread combines the nutty flavor of oats with a touch of honey. It's a dense and wholesome bread, perfect for toasting and enjoying with butter or jam.",
     ingredients: ["400g wholemeal flour", "100g oats", "10g salt", "15g honey", "7g active dry yeast", "300ml warm water"],
     instructions: ["Mix oats, flour, and salt.", "Dissolve yeast in warm water with honey.", "Combine wet and dry ingredients, knead, and let it rise for 1-2 hours.", "Shape into a loaf, rise for an additional 30 minutes, and bake at 375°F (190°C) for 25-30 minutes."],
-    imageUrl: "Oat Bread",
+    imageUrl: "https://scottishscran.com/wp-content/uploads/2020/10/Scottish-Bannocks-Recipe-038.jpg",
     country_id: @c1.id)
   end
 

@@ -8,7 +8,7 @@ RSpec.describe "Breads API endpoints" do
                     culinary: "Scotland's culinary history is characterized by hearty and traditional dishes. Staple foods include haggis, a savory pudding made from sheep's organs, oats, and spices. Scotch whisky, renowned globally, is a significant part of Scottish drinking culture. The cuisine often features locally sourced ingredients such as salmon, venison, and neeps (turnips) and tatties (potatoes).",
                     imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1200px-Flag_of_Scotland.svg.png")
 
-      bread = country.breads.create!(
+      bread = c1.breads.create!(
         name: "Sourdough",
         description: "Ooooo, this bread is sour",
         ingredients: ["Flour", "Salt", "Water"],

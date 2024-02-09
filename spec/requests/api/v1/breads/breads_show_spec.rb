@@ -49,12 +49,12 @@ RSpec.describe "Breads API endpoints" do
       expect(bread_reach[:description]).to eq("#{bread.description}")
 
       expect(bread_reach).to have_key(:ingredients)
-      expect(bread_reach[:ingredients]).to be_a(String)
-      expect(bread_reach[:ingredients]).to eq("#{bread.ingredients}")
+      expect(bread_reach[:ingredients]).to be_a(Array)
+      expect(bread_reach[:ingredients]).to eq(bread.ingredients)
 
       expect(bread_reach).to have_key(:instructions)
-      expect(bread_reach[:instructions]).to be_a(String)
-      expect(bread_reach[:instructions]).to eq("#{bread.instructions}")
+      expect(bread_reach[:instructions]).to be_a(Array)
+      expect(bread_reach[:instructions]).to eq(bread.instructions)
 
       expect(bread_reach).to have_key(:imageUrl)
       expect(bread_reach[:imageUrl]).to be_a(String)

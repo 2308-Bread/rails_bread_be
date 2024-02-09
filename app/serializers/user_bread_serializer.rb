@@ -1,7 +1,6 @@
 class UserBreadSerializer
   def initialize(user_bread)
     @user_bread = user_bread
-    # require 'pry';binding.pry
   end
 
   def serialized_response

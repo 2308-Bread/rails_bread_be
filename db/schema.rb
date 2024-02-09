@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_09_000122) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_09_040316) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,8 +20,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_09_000122) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "country_id", null: false
-    t.string "ingredients"
-    t.string "instructions"
+    t.text "ingredients", array: true
+    t.text "instructions", array: true
     t.string "imageUrl"
     t.index ["country_id"], name: "index_breads_on_country_id"
   end

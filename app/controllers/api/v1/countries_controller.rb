@@ -3,7 +3,7 @@ class Api::V1::CountriesController < ApplicationController
   def index
     render json: CountrySerializer.new(Country.all), status: 200
   end
-  # GET /api/v1/countries/:id
+  # GET /api/v1/countries/:country_name
   def show  
     country = Country.find_by(name: params[:id].capitalize)
     if country != nil

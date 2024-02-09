@@ -25,7 +25,7 @@ module BreadBe
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'http://localhost:3000', 'https://laboulangerie.vercel.app/' # Update with your frontend origins
+        origins 'http://localhost:3000', 'https://laboulangerie.vercel.app' # Update with your frontend origins
     
         resource '/api/v1/*',
           headers: :any,

@@ -25,14 +25,6 @@ c6 =Country.create!(name: "Italy",
                     culinary: "Italy's culinary history is a gastronomic journey marked by passion and regional diversity. Pasta, a staple, takes various forms across the country, paired with diverse sauces like Bolognese and pesto. Italian cuisine emphasizes fresh, locally sourced ingredients, seen in dishes such as risotto and bruschetta. Renowned for its wines, cheeses, and iconic desserts like tiramisu, Italy's culinary heritage is a blend of tradition, innovation, and a deep appreciation for flavors.",
                     imageUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/220px-Flag_of_Italy.svg.png")
 
-# Stash of country Images 
-# Scotland: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1200px-Flag_of_Scotland.svg.png"
-# France: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png"
-# Italy: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/220px-Flag_of_Italy.svg.png"
-# Brazil: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png"
-# India: "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1280px-Flag_of_India.svg.png"
-# Japan: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png"
-
 
 c4.breads << Bread.create!(name: "Baguette",
                           description: "A quintessential French bread, the baguette is characterized by its long, thin shape, crispy golden crust, and soft, airy interior. It is a symbol of French baking and is versatile, perfect for sandwiches or as an accompaniment to meals.",
@@ -216,15 +208,3 @@ c6.breads << Bread.create!(name: "Pane Casareccio",
                           country_id: c6.id)
 
 user = User.create!(name: "Bradley Baker", email: "dabakingking@baker.com", password_digest: "breaduberalles")
-
-
-# Stash of country Images 
-# Scotland: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1200px-Flag_of_Scotland.svg.png"
-# France: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png"
-# Italy: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/220px-Flag_of_Italy.svg.png"
-# Brazil: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png"
-# India: "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1280px-Flag_of_India.svg.png"
-# Japan: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png"
-
-# Stash of bread images
-#Scotland

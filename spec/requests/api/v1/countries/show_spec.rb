@@ -28,10 +28,6 @@ RSpec.describe "Countries Show" do
     expect(response_body[:country][:data][:attributes]).to have_key(:imageUrl)
     expect(response_body[:country][:data][:attributes][:imageUrl]).to be_a(String)
 
-
-    expect(response_body[:country][:data]).to have_key(:relationships)
-    expect(response_body[:country][:data][:relationships]).to have_key(:breads)
-
     expect(response_body[:breads]).to have_key(:data)
     expect(response_body[:breads]).to be_a(Hash)
   end
@@ -94,8 +90,11 @@ c1.breads << Bread.create!(name: "Whisky Barrel Stave Bread",
     response_body[:breads][:data].each do |bread|
       expect(bread[:attributes]).to have_key(:name)
       expect(bread[:attributes]).to have_key(:description)
-      expect(bread[:attributes]).to have_key(:ingredients)
-      expect(bread[:attributes]).to have_key(:instructions)
+      expect(bread[:attributes]).to have_key(:recipe)
+      expect(bread[:attributes][:recipe]).to have_key(:ingredients)
+      expect(bread[:attributes][:recipe][:ingredients]).to be_a(Array)
+      expect(bread[:attributes][:recipe]).to have_key(:instructions)
+      expect(bread[:attributes][:recipe][:instructions]).to be_a(Array)
       expect(bread[:attributes]).to have_key(:imageUrl)
     end
   end

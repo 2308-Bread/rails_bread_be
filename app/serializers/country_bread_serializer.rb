@@ -2,7 +2,6 @@ class CountryBreadSerializer
   def initialize(country, country_breads)
     @country = country
     @breads = country_breads
-    # require 'pry'; binding.pry
   end
 
   def serialized_response
@@ -33,19 +32,11 @@ class CountryBreadSerializer
           description: bread.description,
           imageUrl: bread.imageUrl,
           recipe: {
-            ingredients: JSON.parse(bread.ingredients),
-            instructions: JSON.parse(bread.instructions),
+            ingredients: bread.ingredients,
+            instructions: bread.instructions,
           }
         }
       }
-    end
-  end
-
-  def self.build_ingredient_list(bread)
-    require 'pry'; binding.pry
-    ingredients_parsed = JSON.parse(bread.ingredients)
-    ingredients_parsed.map do |i|
-      require 'pry'; binding.pry
     end
   end
 end

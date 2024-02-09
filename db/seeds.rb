@@ -86,3 +86,10 @@ c6.breads << Bread.create!(name: "Pane Casareccio", description: "Pane Casarecci
 # Stash of bread images
 #Scotland
   # 
+
+# "https://upload.wikimedia.org/wikipedia/commons/4/40/Baguette_de_pain%2C_WikiCheese_Lausanne.jpg"
+
+# "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Home_made_sour_dough_bread.jpg/220px-Home_made_sour_dough_bread.jpg"
+
+
+

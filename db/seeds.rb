@@ -207,4 +207,8 @@ c6.breads << Bread.create!(name: "Pane Casareccio",
                           imageUrl: "https://i0.wp.com/www.cosiitaliano.com/wp-content/uploads/2015/02/Pane-Casareccio-Enhanced-Cropped-Background-replaced-680x393-@-8.jpg?fit=680%2C393&ssl=1",
                           country_id: c6.id)
 
-user = User.create!(name: "Bradley Baker", email: "dabakingking@baker.com", password_digest: "breaduberalles")
+
+
+user = User.create!(name: "Eric", email: "papi@bread.com", password_digest: "oi")
+
+

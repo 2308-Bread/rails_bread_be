@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Breads API endpoints" do
+RSpec.describe "Breads Show" do
   describe "/api/v1/breads/:id" do
     it "sends a formatted json response of a specific bread and its attributes" do
       c1 = Country.create!(name: "Scotland", 

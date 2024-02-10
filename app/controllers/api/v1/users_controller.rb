@@ -1,4 +1,15 @@
 class Api::V1::UsersController < ApplicationController
+  # GET /api/v1/users
+  def index
+    render json: UserSerializer.new(User.all), status: 200
+  end
+# GET /api/v1/users/:id
+  def show
+    # require 'pry';binding.pry
+    user = User.find(params[:id])
+    render json: UserSerializer.new(user), status: 200
+  end
+
   def create
     user = User.new(user_params)
 

@@ -10,6 +10,8 @@ RSpec.describe Bread, type: :model do
   describe "validations" do
     it { should validate_presence_of(:name)}
     it { should validate_presence_of(:description)}
-    it { should validate_presence_of(:recipe)}
+    it { should validate_presence_of(:ingredients)}
+    it { should validate_presence_of(:instructions)}
+    it { should validate_presence_of(:imageUrl)}
   end  
 end

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :countries, only: [:index, :show]
       resources :breads, only: [:show]
       resources :user_breads, only: [:create, :destroy]
+      resources :users, only: [:create, :destroy]
     end
   end
 end

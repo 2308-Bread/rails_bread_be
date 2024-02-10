@@ -1,7 +1,6 @@
 class UserBreadSerializer
   def initialize(user_bread)
     @user_bread = user_bread
-    # require 'pry';binding.pry
   end
 
   def serialized_response
@@ -20,7 +19,9 @@ class UserBreadSerializer
                 bread_attributes: {
                   bread_name: bread.name,
                   description: bread.description,
-                  recipe: bread.recipe,
+                  ingredients: bread.ingredients,
+                  instructions: bread.instructions,
+                  imageUrl: bread.imageUrl,
                   bread_country: bread.country.name
                 }
               }

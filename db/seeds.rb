@@ -209,6 +209,6 @@ c6.breads << Bread.create!(name: "Pane Casareccio",
 
 
 
-user = User.create!(name: "Eric", email: "papi@bread.com", password_digest: "oi")
+# user = User.create!(name: "Eric", email: "papi@bread.com", password_digest: "oi")
 
 

@@ -6,7 +6,7 @@ Created by:
 - [Bobby Steckline](https://www.linkedin.com/in/rsteckline/) | [GitHub](https://github.com/rsteckline)
 - [Deanna Stevens](https://www.linkedin.com/in/deanna-sofia-stevens/) | [GitHub](https://github.com/dsstevens)
 ## Directory
-- [Overview]()
+- [Overview](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#overview)
 - [Getting Started](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#getting-started)
 - [Built With](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#built-with)
 - [Database Visualization](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#database-visualization)

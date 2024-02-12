@@ -6,21 +6,44 @@ Created by:
 - [Bobby Steckline](https://www.linkedin.com/in/rsteckline/) | [GitHub](https://github.com/rsteckline)
 - [Deanna Stevens](https://www.linkedin.com/in/deanna-sofia-stevens/) | [GitHub](https://github.com/dsstevens)
 ## Directory
-- [Getting Started]()
-- [Built With]()
-- [Database Visualization]()
-- [Testing]()
-- [Gems and Testing ]()
-- [Learning Goals]()
-- [API Endpoints]()
-- [Endpoint Details]()
-  - [All Countries]()
-  - [Specific Country Details and Associated Breads]()
-  - [All Breads]()
-  - [Specific Bread Details]()
-  - [All Users]()
-  - [Specific Users Details]()
+- [Overview]()
+- [Getting Started](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#getting-started)
+- [Built With](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#built-with)
+- [Database Visualization](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#database-visualization)
+- [Testing](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#testing)
+- [Gems and Testing ](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#gems-and-testing)
+- [API Endpoints](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#api-endpoints)
+  - [All Countries](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#all-countries)
+  - [Specific Country Details and Associated Breads](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#specific-country-details-and-associated-breads-pass-the-endpoint-a-country-name)
+  - [All Breads](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#all-breads)
+  - [Specific Bread Details](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#specific-bread-details-pass-the-endpoint-a-bread-name)
+  - [All Users](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#all-users)
+  - [Specific Users Details](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#specific-users-details-pass-the-endpoint-a-user-id)
   
+## Overview
+
+This is an API Repository built in Ruby with a Rails framework and deployed on Heroku.
+
+Using this API will allow you to get traditional breads that originate from each country around the world. While we here at "le Belongea Boulangerie" care about home made bread; more countries, more breads, more recipes coming soon. 
+### Want to see the other Repos?
+
+<u> C# && .NET </u>
+  - [.NET Repo](https://github.com/2308-Bread/dotnet-bread-be)
+  - [Frontend Repo](https://github.com/2308-Bread/dotnet-bread-fe)
+  - [Deployed Site](https://dotnet-laboulangerie.vercel.app/)
+
+<br>
+
+<u> Ruby on Rails </u>
+  - [Rails Repo](https://github.com/2308-Bread/rails_bread_be)
+  - [Frontend Repo](https://github.com/2308-Bread/rails_bread_fe)
+  - [Deployed Site](https://laboulangerie.vercel.app/)
+
+<br>
+
+<u>Furture Features</u>
+ - [GitHub Projects Boards](https://github.com/orgs/2308-Bread/projects/1/views/1)
+ 
 ## Getting Started
 
 Ensure that you have [Ruby 3.1.4](https://github.com/ruby/ruby) && [Rails 7.0.8](https://github.com/rails/rails) installed.
@@ -34,10 +57,14 @@ In your terminal:
 - `rails db:{drop,create,seed,migrate}`
 
 ## Built With
-<img src="https://logowik.com/content/uploads/images/heroku8748.jpg" alt="drawing" width="100"/>
-<img src="https://logowik.com/content/uploads/images/circleci8026.jpg" alt="drawing" width="100"/>
-<img src="https://logowik.com/content/uploads/images/ruby.jpg" alt="drawing" width="100"/>
-<img src="https://logowik.com/content/uploads/images/rails5177.logowik.com.webp" alt="drawing" width="100"/>
+![CircleCI](https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
+![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
 
 ## Database Visualization
 ![Bread Schema Visualization]()

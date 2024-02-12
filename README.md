@@ -9,7 +9,6 @@ Created by:
 - [Overview](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#overview)
 - [Getting Started](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#getting-started)
 - [Built With](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#built-with)
-- [Database Visualization](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#database-visualization)
 - [Testing](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#testing)
 - [Gems and Testing ](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#gems-and-testing)
 - [API Endpoints](https://github.com/2308-Bread/rails_bread_be?tab=readme-ov-file#api-endpoints)
@@ -66,8 +65,6 @@ In your terminal:
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 
-## Database Visualization
-![Bread Schema Visualization]()
 
 ## Testing
 - `bundle exec rspec` will run all of the tests at once 

@@ -25,75 +25,75 @@ c6 =Country.create!(name: "Italy",
                     culinary: "Italy's culinary history is a gastronomic journey marked by passion and regional diversity. Pasta, a staple, takes various forms across the country, paired with diverse sauces like Bolognese and pesto. Italian cuisine emphasizes fresh, locally sourced ingredients, seen in dishes such as risotto and bruschetta. Renowned for its wines, cheeses, and iconic desserts like tiramisu, Italy's culinary heritage is a blend of tradition, innovation, and a deep appreciation for flavors.",
                     imageUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/220px-Flag_of_Italy.svg.png")
 c7 = Country.create!(name: "China",
-                    overview: ,
+                    overview: "China, an ancient civilization in East Asia, boasts a rich cultural history spanning thousands of years. With influential philosophies like Confucianism and Daoism, iconic landmarks such as the Great Wall, and a diverse cuisine emphasizing regional flavors, China's cultural tapestry is characterized by tradition, innovation, and global influence.",
                     culinary: ,
                     imageUrl: )
 c8 = Country.create!(name: "Canada",
-                    overview: ,
+                    overview: "Canada, a vast and diverse North American nation, is known for its stunning landscapes, multicultural cities, and friendly people. With French and British influences, Canada embraces a rich cultural mosaic, from the vibrant arts scene to outdoor pursuits like ice hockey. Indigenous traditions further contribute to the country's unique identity." ,
                     culinary: ,
                     imageUrl: )
 c9 = Country.create!(name: "Egypt",
-                    overview: ,
+                    overview: "Egypt, a cradle of ancient civilization in North Africa, is famed for its awe-inspiring pyramids, temples, and the Nile River. With a history dating back to the pharaohs, Egyptian culture showcases a blend of ancient traditions, Islamic influences, and a vibrant contemporary arts scene. The country remains a treasure trove of archaeological wonders.",
                     culinary: ,
                     imageUrl: )
 c10 = Country.create!(name: "El Salvador",
-                    overview: ,
+                    overview: "El Salvador, the smallest country in Central America, boasts a rich cultural heritage influenced by indigenous roots and Spanish colonial history. The nation is known for its lively festivals, delicious pupusas, and a warm sense of community. El Salvador's landscapes, from volcanoes to Pacific beaches, add to its charm.",
                     culinary: ,
                     imageUrl: )
 c11 = Country.create!(name: "England",
-                    overview: ,
+                    overview: "England, part of the United Kingdom, is steeped in history, literature, and iconic landmarks. From Shakespeare to the Beatles, England's cultural impact is vast. With a mix of tradition and modernity, the country embraces diverse art, literature, and a love for football. London, the capital, is a global hub of arts and finance.",
                     culinary: ,
                     imageUrl: )
 c12 = Country.create!(name: "Ethiopia",
-                    overview: ,
+                    overview: "Ethiopia, an ancient land in the Horn of Africa, is a mosaic of cultures and landscapes. Known for its historical sites, including Lalibela's rock-hewn churches, Ethiopia embraces diverse traditions, from ancient Orthodox Christianity to tribal customs. The country's cuisine, highlighted by injera and flavorful spices, adds to its allure.",
                     culinary: ,
                     imageUrl: )
 c13 = Country.create!(name: "Finland",
-                    overview: ,
+                    overview: "Ethiopia, an ancient land in the Horn of Africa, is a mosaic of cultures and landscapes. Known for its historical sites, including Lalibela's rock-hewn churches, Ethiopia embraces diverse traditions, from ancient Orthodox Christianity to tribal customs. The country's cuisine, highlighted by injera and flavorful spices, adds to its allure.",
                     culinary: ,
                     imageUrl: )
 c14 = Country.create!(name: "Georgia",
-                    overview: ,
+                    overview: "Georgia, at the crossroads of Europe and Asia, is a country with a rich cultural heritage. Famed for its hospitality, ancient wine-making traditions, and distinctive alphabet, Georgia's landscapes range from the Caucasus Mountains to the Black Sea. The country's folk dances and polyphonic singing are integral parts of its vibrant culture.",
                     culinary: ,
                     imageUrl: )
 c15 = Country.create!(name: "Germany",
-                    overview: ,
+                    overview: "Germany, a central European powerhouse, combines a storied history with modern innovation. From the medieval charm of Bavaria to the dynamic art scene in Berlin, Germany offers a diverse cultural experience. Renowned for its precision engineering, classical music, and Oktoberfest, Germany's influence resonates globally.",
                     culinary: ,
                     imageUrl: )
 c16 = Country.create!(name: "Greece",
-                    overview: ,
+                    overview: "Greece, cradle of Western civilization, is known for its ancient ruins, picturesque islands, and a vibrant Mediterranean lifestyle. With contributions to philosophy, democracy, and mythology, Greece's cultural legacy is profound. The country's cuisine, mythology, and iconic landmarks like the Acropolis attract visitors from around the world.",
                     culinary: ,
                     imageUrl: )
 c17 = Country.create!(name: "Iceland",
-                    overview: ,
+                    overview: "Iceland, a Nordic island nation, captivates with its otherworldly landscapes, including glaciers, geysers, and waterfalls. Despite its small population, Iceland boasts a rich literary tradition, folklore, and a unique connection to nature. The Icelandic sagas and the Northern Lights contribute to the country's mystical allure.",
                     culinary: ,
                     imageUrl: )
 c18 = Country.create!(name: "Indonesia",
-                    overview: ,
+                    overview: "Indonesia, an archipelago in Southeast Asia, is a tapestry of diverse cultures, languages, and landscapes. From Bali's vibrant arts scene to Jakarta's modernity, Indonesia embraces a rich heritage influenced by Hindu-Buddhist traditions, Islamic culture, and indigenous customs. The country's cuisine is a flavorful blend of spices and regional specialties.",
                     culinary: ,
                     imageUrl: )
 c19 = Country.create!(name: "Ireland",
-                    overview: ,
+                    overview: "Ireland, an island nation in Western Europe, is known for its lush landscapes, folklore, and friendly locals. With a literary tradition that includes James Joyce and W.B. Yeats, Ireland celebrates its Celtic heritage through music, dance, and festivals. The warmth of Irish hospitality is a hallmark of the country's culture.",
                     culinary: ,
                     imageUrl: )
 c20 = Country.create!(name: "Poland",
-                    overview: ,
+                    overview: "Poland, situated in Central Europe, has a history marked by resilience and cultural richness. From medieval castles to the historic city of Krakow, Poland's heritage is evident. The country's traditions, including folk art, music, and hearty cuisine, reflect a deep connection to both Eastern and Western European influences.",
                     culinary: ,
                     imageUrl: )
 c21 = Country.create!(name: "Portugal",
-                    overview: ,
+                    overview: "Portugal, on the Iberian Peninsula, is celebrated for its maritime history, explorers like Vasco da Gama, and picturesque landscapes. With a blend of Moorish, African, and European influences, Portugal's cultural diversity is reflected in its music, dance, and cuisine. Fado, a soulful genre of music, is an integral part of Portuguese culture.",
                     culinary: ,
                     imageUrl: )
 c22 = Country.create!(name: "Turkey",
-                    overview: ,
+                    overview: "Turkey, at the crossroads of Europe and Asia, boasts a rich historical legacy, including the Byzantine and Ottoman empires. Istanbul, with its iconic mosques and bazaars, reflects this cultural fusion. Turkish cuisine, with delights like kebabs and baklava, is renowned globally. The country's traditions include vibrant carpets, ceramics, and the ancient city of Troy.",
                     culinary: ,
                     imageUrl: )
 c23 = Country.create!(name: "Ukraine",
-                    overview: ,
+                    overview: "Ukraine, the largest country in Europe, is characterized by its diverse landscapes, including the Carpathian Mountains and the Black Sea coast. With a history intertwined with Russia and Europe, Ukraine has a rich cultural heritage. Traditional folk art, literature, and a strong sense of national identity shape the country's cultural landscape.",
                     culinary: ,
                     imageUrl: )
 c24 = Country.create!(name: "United States of America",
-                    overview: ,
+                    overview: "The United States, a vast and diverse nation in North America, is known for its cultural melting pot and global influence. From the skyscrapers of New York to the beaches of California, the U.S. offers a dynamic blend of cultures, traditions, and innovations. With contributions to music, film, and technology, the U.S. continues to shape global trends.",
                     culinary: ,
                     imageUrl: )
 # Scotland
@@ -275,6 +275,8 @@ c6.breads << Bread.create!(name: "Pane Casareccio",
                           instructions: ["Mix flour and salt.", "Dissolve yeast in warm water.", "Combine wet and dry ingredients, knead, and let it rise for 1-2 hours.", "Shape the dough, rise for 30 minutes, and bake at 425°F (220°C) for 25-30 minutes."],
                           imageUrl: "https://i0.wp.com/www.cosiitaliano.com/wp-content/uploads/2015/02/Pane-Casareccio-Enhanced-Cropped-Background-replaced-680x393-@-8.jpg?fit=680%2C393&ssl=1",
                           country_id: c6.id)
+
+
 
 
 

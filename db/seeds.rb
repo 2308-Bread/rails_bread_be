@@ -1,5 +1,5 @@
 
-
+# Countries
 c1 = Country.create!(name: "Scotland", 
                     overview: "Scotland is a country that is part of the United Kingdom, located in the northern part of the island of Great Britain. It is known for its rich history, stunning landscapes, and vibrant cultural heritage. The capital city is Edinburgh, and major cities include Glasgow and Aberdeen. Scotland has a distinct identity with its own legal and education systems.",
                     culinary: "Scotland's culinary history is characterized by hearty and traditional dishes. Staple foods include haggis, a savory pudding made from sheep's organs, oats, and spices. Scotch whisky, renowned globally, is a significant part of Scottish drinking culture. The cuisine often features locally sourced ingredients such as salmon, venison, and neeps (turnips) and tatties (potatoes).",
@@ -24,33 +24,78 @@ c6 =Country.create!(name: "Italy",
                     overview: "Italy, situated in Southern Europe, is renowned for its rich cultural heritage, historical landmarks, and exquisite art. The birthplace of the Renaissance, Italy boasts iconic cities like Rome, Florence, and Venice. Famous for its delectable cuisine, including pasta, pizza, and gelato, Italian food is characterized by fresh, high-quality ingredients. The Mediterranean nation captivates with its stunning landscapes, from the rolling hills of Tuscany to the picturesque Amalfi Coast.",
                     culinary: "Italy's culinary history is a gastronomic journey marked by passion and regional diversity. Pasta, a staple, takes various forms across the country, paired with diverse sauces like Bolognese and pesto. Italian cuisine emphasizes fresh, locally sourced ingredients, seen in dishes such as risotto and bruschetta. Renowned for its wines, cheeses, and iconic desserts like tiramisu, Italy's culinary heritage is a blend of tradition, innovation, and a deep appreciation for flavors.",
                     imageUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/220px-Flag_of_Italy.svg.png")
-
-
-c4.breads << Bread.create!(name: "Baguette",
-                          description: "A quintessential French bread, the baguette is characterized by its long, thin shape, crispy golden crust, and soft, airy interior. It is a symbol of French baking and is versatile, perfect for sandwiches or as an accompaniment to meals.",
-                          ingredients: ["-500g all-purpose flour", "10g salt", "7g active dry yeast", "350ml warm water"],
-                          instructions: ["In a bowl, dissolve yeast in warm water and let it sit for 5 minutes until foamy.", "In a large mixing bowl, combine flour and salt.", "Make a well in the center and pour in the yeast mixture.", "Mix until a dough forms, then knead on a floured surface for about 10 minutes until smooth.", "Place the dough in a lightly oiled bowl, cover with a cloth, and let it rise for 1-2 hours or until doubled in size.", "Punch down the dough, shape it into a baguette, and place on a baking sheet.", "Let it rise for another 30 minutes.", "Preheat the oven to 450°F (230°C).", "Slash the top of the baguette with a sharp knife and bake for 20-25 minutes until golden brown."],
-                          imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Baguette_de_pain%2C_WikiCheese_Lausanne.jpg/120px-Baguette_de_pain%2C_WikiCheese_Lausanne.jpg",
-                          country_id: c4.id)
-c4.breads << Bread.create!(name: "Pain de Campagne",
-                          description: "Translating to 'country bread', pain de campagne is a rustic French loaf made with a mix of flours. It has a chewy crust and a slightly tangy flavor, often enhanced by the addition of a natural sourdough starter.",
-                          ingredients: ["400g bread flour", "100g whole wheat flour", "10g salt", "300ml warm water", "100g active sourdough starter"],
-                          instructions: ["In a large bowl, combine bread flour, whole wheat flour, and salt.", "Mix warm water and sourdough starter, then add to the dry ingredients.", "Knead the dough for 15-20 minutes until it becomes smooth and elastic.", "Place the dough in a lightly oiled bowl, cover, and let it rise for 3-4 hours or until doubled in size.", "Shape the dough into a round loaf, place on a floured surface, and let it rise for an additional 1-2 hours.", "Preheat the oven to 450°F (230°C).", "Slash the top of the bread and bake for 30-35 minutes until the crust is golden brown."],
-                          imageUrl: "https://www.raymondblanc.com/wp-content/uploads/2018/04/Raymond_Blanc_001-1688-1920x1080.jpg",
-                          country_id: c4.id)
-c4.breads << Bread.create!(name: "Pain  Poilâne",
-                          description: "Pain Poilâne is a round, sourdough-style bread with a hearty crust and a distinct wheaty flavor. It's named after the renowned Poilâne bakery in Paris known for its commitment to traditional baking methods.",
-                          ingredients: ["500g bread flour", "10g salt", "300ml warm water", "100g active sourdough starter"],
-                          instructions: ["Combine bread flour and salt in a large bowl.", "Mix warm water and sourdough starter, then add to the dry ingredients.", "Knead the dough for 15-20 minutes until smooth and elastic.", "Place the dough in a lightly oiled bowl, cover, and let it rise for 4-6 hours or until doubled."],
-                          imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Pain_Po%C3%AElane-_Paris_15e.jpg",
-                          country_id: c4.id)
-c4.breads << Bread.create!(name: "Pain  Complet",
-                          description: "Pain complet, or whole wheat bread, is a wholesome and nutty-flavored French bread made with whole wheat flour. It offers a heartier texture and is a nutritious choice.",
-                          ingredients: ["500g whole wheat flour", "10g salt", "7g active dry yeast", "350ml warm water"],
-                          instructions: ["Dissolve yeast in warm water and let it sit for 5 minutes until foamy.", "In a large bowl, combine whole wheat flour and salt.", "Make a well and pour in the yeast mixture.", "Mix until a dough forms, then knead on a floured surface for about 10 minutes until smooth.", "Place the dough in a lightly oiled bowl, cover, and let it rise for 1-2 hours or until doubled in size.", "Punch down the dough, shape it into a loaf, and place in a greased pan.", "Let it rise for another 30 minutes.", "Preheat the oven to 400°F (200°C).", "Bake for 25-30 minutes until the bread is golden brown."],
-                          imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Pain_complet.jpg/220px-Pain_complet.jpg",
-                          country_id: c4.id)
-
+c7 = Country.create!(name: "China",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c8 = Country.create!(name: "Canada",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c9 = Country.create!(name: "Egypt",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c10 = Country.create!(name: "El Salvador",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c11 = Country.create!(name: "England",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c12 = Country.create!(name: "Ethiopia",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c13 = Country.create!(name: "Finland",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c14 = Country.create!(name: "Georgia",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c15 = Country.create!(name: "Germany",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c16 = Country.create!(name: "Greece",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c17 = Country.create!(name: "Iceland",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c18 = Country.create!(name: "Indonesia",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c19 = Country.create!(name: "Ireland",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c20 = Country.create!(name: "Poland",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c21 = Country.create!(name: "Portugal",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c22 = Country.create!(name: "Turkey",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c23 = Country.create!(name: "Ukraine",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
+c24 = Country.create!(name: "United States of America",
+                    overview: ,
+                    culinary: ,
+                    imageUrl: )
 # Scotland
 c1.breads << Bread.create!(name: "Scotch Broth Bread",
                           description: "Inspired by traditional Scotch Broth soup, this hearty bread is infused with flavors of lamb, barley, and root vegetables. A rustic and comforting choice.",
@@ -130,6 +175,30 @@ c3.breads << Bread.create!(name: "Broa",
                           country_id: c3.id)
 
 # France (Continued)
+c4.breads << Bread.create!(name: "Baguette",
+                          description: "A quintessential French bread, the baguette is characterized by its long, thin shape, crispy golden crust, and soft, airy interior. It is a symbol of French baking and is versatile, perfect for sandwiches or as an accompaniment to meals.",
+                          ingredients: ["-500g all-purpose flour", "10g salt", "7g active dry yeast", "350ml warm water"],
+                          instructions: ["In a bowl, dissolve yeast in warm water and let it sit for 5 minutes until foamy.", "In a large mixing bowl, combine flour and salt.", "Make a well in the center and pour in the yeast mixture.", "Mix until a dough forms, then knead on a floured surface for about 10 minutes until smooth.", "Place the dough in a lightly oiled bowl, cover with a cloth, and let it rise for 1-2 hours or until doubled in size.", "Punch down the dough, shape it into a baguette, and place on a baking sheet.", "Let it rise for another 30 minutes.", "Preheat the oven to 450°F (230°C).", "Slash the top of the baguette with a sharp knife and bake for 20-25 minutes until golden brown."],
+                          imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Baguette_de_pain%2C_WikiCheese_Lausanne.jpg/120px-Baguette_de_pain%2C_WikiCheese_Lausanne.jpg",
+                          country_id: c4.id)
+c4.breads << Bread.create!(name: "Pain de Campagne",
+                          description: "Translating to 'country bread', pain de campagne is a rustic French loaf made with a mix of flours. It has a chewy crust and a slightly tangy flavor, often enhanced by the addition of a natural sourdough starter.",
+                          ingredients: ["400g bread flour", "100g whole wheat flour", "10g salt", "300ml warm water", "100g active sourdough starter"],
+                          instructions: ["In a large bowl, combine bread flour, whole wheat flour, and salt.", "Mix warm water and sourdough starter, then add to the dry ingredients.", "Knead the dough for 15-20 minutes until it becomes smooth and elastic.", "Place the dough in a lightly oiled bowl, cover, and let it rise for 3-4 hours or until doubled in size.", "Shape the dough into a round loaf, place on a floured surface, and let it rise for an additional 1-2 hours.", "Preheat the oven to 450°F (230°C).", "Slash the top of the bread and bake for 30-35 minutes until the crust is golden brown."],
+                          imageUrl: "https://www.raymondblanc.com/wp-content/uploads/2018/04/Raymond_Blanc_001-1688-1920x1080.jpg",
+                          country_id: c4.id)
+c4.breads << Bread.create!(name: "Pain  Poilâne",
+                          description: "Pain Poilâne is a round, sourdough-style bread with a hearty crust and a distinct wheaty flavor. It's named after the renowned Poilâne bakery in Paris known for its commitment to traditional baking methods.",
+                          ingredients: ["500g bread flour", "10g salt", "300ml warm water", "100g active sourdough starter"],
+                          instructions: ["Combine bread flour and salt in a large bowl.", "Mix warm water and sourdough starter, then add to the dry ingredients.", "Knead the dough for 15-20 minutes until smooth and elastic.", "Place the dough in a lightly oiled bowl, cover, and let it rise for 4-6 hours or until doubled."],
+                          imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Pain_Po%C3%AElane-_Paris_15e.jpg",
+                          country_id: c4.id)
+c4.breads << Bread.create!(name: "Pain  Complet",
+                          description: "Pain complet, or whole wheat bread, is a wholesome and nutty-flavored French bread made with whole wheat flour. It offers a heartier texture and is a nutritious choice.",
+                          ingredients: ["500g whole wheat flour", "10g salt", "7g active dry yeast", "350ml warm water"],
+                          instructions: ["Dissolve yeast in warm water and let it sit for 5 minutes until foamy.", "In a large bowl, combine whole wheat flour and salt.", "Make a well and pour in the yeast mixture.", "Mix until a dough forms, then knead on a floured surface for about 10 minutes until smooth.", "Place the dough in a lightly oiled bowl, cover, and let it rise for 1-2 hours or until doubled in size.", "Punch down the dough, shape it into a loaf, and place in a greased pan.", "Let it rise for another 30 minutes.", "Preheat the oven to 400°F (200°C).", "Bake for 25-30 minutes until the bread is golden brown."],
+                          imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Pain_complet.jpg/220px-Pain_complet.jpg",
+                          country_id: c4.id)
 c4.breads << Bread.create!(name: "Pain Comté",
                           description: "Pain Comté is a French bread infused with Comté cheese, creating a rich and savory flavor. It's perfect for pairing with a variety of cheeses or enjoying on its own.",
                           ingredients: ["500g bread flour", "10g salt", "7g active dry yeast", "300ml warm water", "200g Comté cheese (grated)"],

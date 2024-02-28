@@ -7,6 +7,9 @@ Rails.application.routes.draw do
       resources :breads, only: [:index, :show]
       resources :user_breads, only: [:create, :destroy]
       resources :users, only: [:index, :show, :create, :destroy]
+      get "/login", to: "users#login_form"
+      post "/login", to: "users#login"
+      #adding these but not sure if this will work with FE? Need to clarify
     end
   end
 end

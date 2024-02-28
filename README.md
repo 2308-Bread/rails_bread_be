@@ -395,3 +395,6 @@ ___
 }
 ```
 ___
+
+### Database Diagram
+![Bread Diagram](https://github.com/2308-Bread/rails_bread_be/assets/139706925/e10f20c0-438a-4a1b-8e94-e5673aa27031)

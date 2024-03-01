@@ -123,7 +123,7 @@ c3.breads << Bread.create!(name: "Broa",
                           instructions: ["Mix cornmeal, wheat flour, sugar, and baking powder.", "Add melted butter and milk.", "Bake in a greased pan at 350°F (180°C) for 25-30 minutes."],
                           imageUrl: "https://www.continente.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwb3524f22/images/col/737/7371247-frente.jpg?sw=2000&sh=2000",
                           country_id: c3.id)
- 
+
 # Canada 8
 c8.breads << Bread.create!(name: "Montreal Bagel",
                           description: "The Montreal bagel is a variant of the New York bagel with a more chewy and dense texture, as well as a more pronounced sweet taste. This recipe yields 16 bagels and requires around 4 hours of preparation, including rising and baking times.",
@@ -271,7 +271,7 @@ c14.breads << Bread.create!(name: "Kubdari (Georgian: კუბდარი)",
                             description: "Kubdari is a traditional Georgian meat-filled pastry originating from the Svaneti region. Known locally as 'kuptaari', it's a savory dish that can be made with beef, pork, or a combination of both, using cubed meat rather than minced for a juicier filling. Seasoned with a blend of spices including cumin, dill, coriander, blue fenugreek, and red pepper, Kubdari offers a robust flavor encased in a sturdy pastry. This recipe provides a step-by-step guide to creating this Georgian culinary staple, perfect for a hearty meal any time of the day.",
                             ingredients: ["Filling: 500g pork, 500g young beef, 1 medium onion, 2 cloves garlic, 1/3 tsp powdered cumin, 1/4 tsp powdered dill, 1 tsp dried coriander, 1/2 tsp blue fenugreek, 1 tsp red pepper, Salt to taste", "Dough: 900g flour, 400ml warm water, 1 tbs yeast, 1 tsp sugar, 1 tsp salt, 1 egg (optional), 200g all-purpose flour for dusting and kneading, Butter for glazing"],
                             instructions: ["For the filling, cube the beef and pork. Finely chop the onion and garlic. Mix these with the spices and salt in a bowl, using hands to ensure the meat is well seasoned.", "Prepare the dough by dissolving yeast in 400ml warm water. In a separate bowl, create a well in 900g flour, add the yeast mixture, egg (optional), and sugar. Mix to form a soft dough ball.", "Cover the dough and let it rise in a warm place for 2 hours. Knead with an additional 150g flour until firm.", "Divide the dough into 4 pieces, mold into balls, and let rest for 10 minutes under cling film.", "Roll out each dough ball and add the filling, wrap the dough around the filling, sealing it at the top.", "Press the filled dough into circular shapes, less than 20cm in diameter, on a flour-dusted baking tray. Avoid flattening too much.", "Bake at 200°C until the dough turns golden brown and the meat cooks in its juices.", "Glaze each Kubdari with butter and serve hot."],
-                            imageUrl: "imageUrl:”https://i.redd.it/ht5ootgsoq8a1.jpg",
+                            imageUrl: "https://i.redd.it/ht5ootgsoq8a1.jpg",
                             country_id: c14.id)
 
 # Germany 15
@@ -411,7 +411,6 @@ c20.breads << Bread.create!(name: "Podplomyki (Polish Flat Bread)",
                             instructions: ["Mix all ingredients in a bowl to prepare the dough. Let it rest for at least 10 minutes; overnight is preferable.", "Preheat a frying pan with a bit of oil.", "With oiled hands, tear off a piece of dough and stretch it out to form a flatbread shape.", "Fry the flatbread in the pan for about 3-4 minutes on each side.", "Repeat the process with the remaining dough.", "Serve the podplomyki warm with your choice of toppings or sides."],
                             imageUrl: "https://blog.bookmeacookie.pl/wp-content/uploads/2020/05/podp%C5%82omyki-book-me-a-cookie-przepis-przepisy-5-Kopiowanie.jpg",
                             country_id: c20.id)
-
 c20.breads << Bread.create!(name: "Polish Babka",
                             description: "This rich, yeast-based Polish Babka, steeped in rum syrup and optionally drizzled with icing, is a cherished Easter tradition in Polish households. Reflecting the diversity of its cultural background, this easy, no-knead batter bread offers a delightful blend of flavors with currants, raisins, and candied peel. Inspired by a recipe from the 1990 200th Anniversary Cookbook, it embodies the essence of Polish baking.",
                             ingredients: ["113g lukewarm milk", "3 large eggs, at room temperature", "Heaping 1/2 teaspoon table salt", "50g granulated sugar", "57g butter, softened", "240g Unbleached All-Purpose Flour", "2 teaspoons instant yeast", "43g currants or raisins (golden raisins preferred)", "43g candied mixed peel, or mixed dried fruit, chopped", "Rum syrup:", "99g granulated sugar", "57g water (or apple juice as a substitute)", "14g to 28g rum (or apple juice as a substitute)", "Icing (optional):", "113g confectioners' sugar", "Pinch of table salt", "28g milk, or a combination of milk and rum or apple juice"],

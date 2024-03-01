@@ -123,7 +123,7 @@ c3.breads << Bread.create!(name: "Broa",
                           instructions: ["Mix cornmeal, wheat flour, sugar, and baking powder.", "Add melted butter and milk.", "Bake in a greased pan at 350°F (180°C) for 25-30 minutes."],
                           imageUrl: "https://www.continente.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwb3524f22/images/col/737/7371247-frente.jpg?sw=2000&sh=2000",
                           country_id: c3.id)
-
+ 
 # Canada 8
 c8.breads << Bread.create!(name: "Montreal Bagel",
                           description: "The Montreal bagel is a variant of the New York bagel with a more chewy and dense texture, as well as a more pronounced sweet taste. This recipe yields 16 bagels and requires around 4 hours of preparation, including rising and baking times.",

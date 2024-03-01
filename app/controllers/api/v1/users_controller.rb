@@ -9,7 +9,7 @@ class Api::V1::UsersController < ApplicationController
     user = User.find(params[:id])
     render json: UserSerializer.new(user), status: 200
   end
-
+# POST /api/v1/users
   def create
     user = User.new(user_params)
 

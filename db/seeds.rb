@@ -114,7 +114,7 @@ c3.breads << Bread.create!(name: "Beiju",
 c3.breads << Bread.create!(name: "Bolo de Milho",
                           description: "Bolo de milho, or cornbread, is a popular Brazilian treat. It's sweet, moist, and often enjoyed with a cup of coffee or as a dessert.",
                           ingredients: ["250g cornmeal", "250ml milk", "2 eggs", "100g sugar","50g butter", "1 tsp baking powder"],
-                          instructions: ["Mix cornmeal, sugar, and baking powder.", "Add eggs, milk, and melted butter."< "Bake in a greased pan at 350°F (180°C) for 30-35 minutes."],
+                          instructions: ["Mix cornmeal, sugar, and baking powder.", "Add eggs, milk, and melted butter.", "Bake in a greased pan at 350°F (180°C) for 30-35 minutes."],
                           imageUrl: "https://www.essenciastudio.com.br/wp-content/uploads/2024/01/bolo-de-milho.jpg",
                           country_id: c3.id)
 c3.breads << Bread.create!(name: "Broa",

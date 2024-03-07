@@ -5,7 +5,7 @@ class Api::V1::CountriesController < ApplicationController
   end
   # GET /api/v1/countries/:country_name
   def show  
-    country = Country.find_by(name: params[:id].capitalize)
+    country = Country.find_country(params[:id])
     if country != nil
       render json: CountryBreadSerializer.new(country, country.breads).serialized_response, status:200
     else

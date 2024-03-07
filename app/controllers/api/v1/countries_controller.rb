@@ -5,9 +5,7 @@ class Api::V1::CountriesController < ApplicationController
   end
   # GET /api/v1/countries/:country_name
   def show  
-    require 'pry'; binding.pry
     country = Country.find_country(params[:id])
-    require 'pry'; binding.pry
     if country != nil
       render json: CountryBreadSerializer.new(country, country.breads).serialized_response, status:200
     else

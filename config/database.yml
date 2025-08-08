@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: bread_be_production
-  username: bread_be
-  password: <%= ENV["BREAD_BE_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
